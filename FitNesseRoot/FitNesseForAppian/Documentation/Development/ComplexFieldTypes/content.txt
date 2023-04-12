@@ -1,0 +1,242 @@
+Contents:
+
+ * [[''All Fields''][#all]]
+ * [[''Paragraph Fields''][#paragraph]]
+ * [[''Date and Datetime Fields''][#datetime]]
+ * [[''File Upload Fields''][#fileUpload]]
+ * [[''Link Fields''][#links]]
+ * [[''Picker Fields''][#pickers]]
+ * [[''Radio And Select Fields''][#radioSelect]]
+ * [[''Grids''][#grids]]
+ * [[''Sections''][#section]]
+!anchor all
+!3 All Fields
+With the exception of a few special field types, all fields can be populated using the following methods.
+
+!4 Using Field Label
+The easiest type of field to populate is one that uses a unique label.
+
+'''Example:'''
+
+|populate field|<FIELD_LABEL>|with|<VALUE>|
+
+!4 Using Field Label[Index]
+If the same label is used for multiple fields in the same interface, indexing is necessary.  In order to select the second iteration of the same label, use LABEL[2].
+
+'''Example:'''!-
+-!For this example let's assume this is the second field with the same label you are filling out on the same interface.
+
+|populate field|<FIELD_LABEL>[2]|with|<VALUE>|
+
+!4 Using Field [Index]
+You can also populate a field by its global index in the interface. This should only be used as a last resort for a field that cannot be accessed any other way. It is both difficult to locate the index for a field and it will result in fragile tests that depend on order of the fields on the form.
+
+'''Example:'''!-
+-!For this example, let's assume this field is the 3rd field in the interface.
+
+|populate field|[3]|with|VALUE|
+
+!4 Using Field Type [Index]
+As it is more common to have certain types of fields without labels, there is also another option to populate a field by its type index in the interface, e.g. populate the first file upload field.!-
+-!The current options available for field types are '''TEXT''', '''PARAGRAPH''', and '''FILE_UPLOAD'''.
+
+For this example, let's assume this field is the 3rd field in the interface, but the first text, paragraph, or field upload field.
+
+'''Examples:'''
+
+|populate|TEXT       |field|[1]|with|<VALUE>|
+|populate|PARAGRAPH  |field|[1]|with|<VALUE>|
+|populate|FILE_UPLOAD|field|[1]|with|<PATH> |
+!anchor paragraph
+!3 Paragraph Fields
+To enter a newline in your paragraph field, use the character sequence \n or \r\n.
+
+'''Example:'''
+
+|populate|<PARAGRAPH_FIELD_LABEL>|with|First Line\r\nSecond Line|
+!anchor datetime
+!3 Date and Datetime Fields
+Date and datetime fields can be populated with specific or relative dates.
+
+!4 Specific Dates
+'''Date'''
+ * When populating and verifying dates, use the following format: YYYY-MM-DD, e.g. 2016-03-20
+
+'''Datetime'''
+ * When populating and verifying datetimes, use the following format: YYYY-MM-DD HH:mm, e.g. 2016-03-20 15:20
+   * 24 Hour Clock means there is no need for AM or PM
+ * Datetime fields, although containing two inputs, are considered a single field by !-FitNesse-! for Appian
+
+'''Example:'''
+
+|populate field|<DATE_FIELD_LABEL>|with|2016-02-30|
+
+!4 Relative Dates
+'''Date and Datetime'''
+ * Use [+-]<number><time unit> to choose a relative time, e.g. ''+5 days'' to input a date 5 days from the set start time or ''-2 months'' to input a date 2 months in the past from the set start time.
+ * Options for time units are:
+   * minutes
+   * hours
+   * days
+   * months
+   * years
+
+'''Example:'''
+
+|populate field|<DATE_FIELD_LABEL>|with|+5 days|
+
+!4 Specific Dates with offset
+'''Date'''
+ * When populating and verifying dates, use the following format: YYYY-MM-DD (e.g. 2016-03-20) followed by one or many relative offsets [+|-]<number> <time unit>. For instance ''2016-03-20 +2 days'' will result in ''2016-03-22'' or ''2016-03-20 +2 days +3 months'' will result in ''2016-06-22''
+ * Options for time units are:
+   * days
+   * months
+   * years
+
+'''Datetime'''
+ * When populating and verifying datetimes, use the following format: YYYY-MM-DD HH:mm (e.g. 2016-03-20 15:20) followed by one or many relative offsets [+|-]<number> <time unit>. For instance ''2016-03-20 15:20 -1 days +3 hours'' will result in ''2016-03-19 18:20''
+   * 24 Hour Clock means there is no need for AM or PM
+ * Options for time units are:
+   * minutes
+   * hours
+   * days
+   * months
+   * years
+ * Datetime fields, although containing two inputs, are considered a single field by !-FitNesse-! for Appian
+!anchor fileUpload
+!3 File Upload Fields
+ * When populating or verifying file upload fields, enter the location of the file, e.g. ${automated.testing.home}/documents/low risk.jpg.
+ * There is no need to click on the '''Choose File''' button.
+
+'''Examples:'''
+
+|populate field|<FILE_UPLOAD_FIELD_LABEL>|with    |${automated.testing.home}/documents/file.txt         |
+|populate      |FILE_UPLOAD              |field   |[1]|with|${automated.testing.home}/documents/file.txt|
+|verify field  |<FILE_UPLOAD_FIELD_LABEL>|contains|${automated.testing.home}/documents/file.txt         |
+!anchor links
+!3 Link Fields
+
+!4 Verifying link display text
+Rather than using the typical
+
+|verify field|<FIELD_LABEL>|contains|<VALUE>|
+instead use the link specific method.
+
+'''Example:'''
+
+|verify link|<LINK_TEXT>|is present|
+
+!4 Verifying link URL
+Rather than using the typical
+
+|verify field|<FIELD_LABEL>|contains|<VALUE>|
+instead use the link specific method.
+
+'''Example:'''
+
+|verify link|<LINK_TEXT>|URL contains|<LINK_URL>|
+!anchor pickers
+!3 Picker Fields
+ * To use a picker ensure the value you are populating also matches a suggestions.
+ * !-FitNesse-! for Appian uses contains rather than equals for string comparison, so it is possible to supply part of a string.
+
+'''Example:'''
+
+|populate field|<USER_PICKER_LABEL>|with|<USER_DISPLAY_NAME>|
+It's possible to select multiple options in a single command by separating the options with commas.
+
+'''Example:'''
+
+|populate field|<PICKER_FIELD_LABEL>|with|First Option,Second Option,Third Option|
+!anchor radioSelect
+!3 Radio and Select Fields
+
+!4 Select by label
+ * Radio and select fields can select values by the option label.
+ * Notice this is the label of the option and not the field itself.  If the option is not labeled, use select by index below.
+
+'''Example:'''
+
+|populate field|<RADIO_OR_SELECT_FIELD_LABEL>|with|<OPTION_LABEL>|
+
+!4 Select by index
+ * Radio and select fields can also select a value by index
+ * Notice the usage of
+
+|populate field|X|with '''value'''|Y|
+FitNesse strips out the brackets unless '''with value''' is used.
+
+'''Example:'''
+
+|populate field|<RADIO_OR_SELECT_FIELD_LABEL>|with value|[<OPTION_INDEX>]|
+
+!4 Selecting multiple checkboxes or selecting multiple
+It's possible to select multiple options in a single command by separating the options with commas.
+
+'''Example:'''
+
+|populate field|<RADIO_OR_MULTI_SELECT_FIELD_LABEL>|with|First Option,Second Option,Third Option|
+!anchor grids
+!3 Grids
+Fields in grids can be accessed several ways using a combination of grid label or index, column label or index, and row index.
+
+When populating grids remember the following:
+
+ * Surround '''all indices''' with brackets, e.g.
+
+|populate grid|[1]|column|[2]|row|[3]|with|VALUE|
+ * For all of the following examples, you can use LABEL[INDEX] if there are multiple grids or columns with the same label
+
+!4 Using Grid Label and Column Label
+ * The easiest example of accessing a column uses the grid and column name.
+
+'''Example:'''
+
+|populate grid|<GRID_LABEL>|column|<COLUMN_LABEL>|row|[<ROW_INDEX>]|with|<VALUE>|
+
+!4 Using Grid Label and Column Index
+If your column doesn't have a name, it's also possible to reference it by using a column index.
+
+'''Example:'''
+
+|populate grid|<GRID_LABEL>|column|[<COLUMN_INDEX>]|row|[<ROW_INDEX>]|with|<VALUE>|
+
+!4 Using Grid Index and Column Label
+But what if you don't have a label on your grid? The answer is to instead reference the grid by its index on the interface, e.g. the first grid on the page would be referenced by [1].
+
+'''Example:'''
+
+|populate grid|[<GRID_INDEX>]|column|<COLUMN_LABEL>|row|[<ROW_INDEX>]|with|<VALUE>|
+
+!4 Using Grid Index and Column Index
+Lastly you can access a column using the grid and column index.
+
+'''Example:'''
+
+|populate grid|[<GRID_INDEX>]|column|[<COLUMN_INDEX>]|row|[<ROW_INDEX>]|with|<VALUE>|
+
+!4 Checking Paging Grid Row
+Do not try to use populate field to check a grid row, instead use dedicated ''select grid'' method.
+
+'''Example:'''
+
+|select grid|<GRID_LABEL>|row|[<ROW_INDEX>]|
+!anchor section
+!3 Sections
+Rather than referencing or indexing fields within the entire interface, they can instead referred to within a section.
+
+!4 Field Label within a Section
+What if we want to fill out a field with a label that is used multiple times on the form?
+
+'''Example:'''!-
+-!For this example we want to fill out the first name in the second section. Instead of referencing First Name[2] we reference the section.
+
+|populate section|<SECTION_LABEL>|field|<FIELD_LABEL>|with|<VALUE>|
+
+!4 Field Index within a Section
+What if the field doesn't have a label? We could instead access it using its index within the section.
+
+'''Example:'''!-
+-!For this example we are attempting to populate the Last Name field in Section 1. To make it more difficult, let's assume that Section 1 also doesn't have a title.
+
+|populate section|[<SECTION_INDEX>]|field|[<FIELD_INDEX>]|with|<VALUE>|

@@ -1,0 +1,56 @@
+---
+Help: Accept the task
+Test
+---
+!***> FitNesse Configurations
+
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.configuration=file:///${automated.testing.home}/log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+*!
+
+!| script              |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
+|Default config details|Dev_Manager                                         |
+
+!*** Accept task
+
+!| script                                                                                                          |
+|click on menu  |TASK                                                                                              |
+|take screenshot|alltasks                                                                                          |
+|verify link    |Approval-#ORDERID[1]             |is present                                                      |
+|click on link  |Approval-#ORDERID[1]                                                                              |
+|take screenshot|taskbeforeaccept                                                                                  |
+|accept task                                                                                                       |
+|verify field   |Dummy Reservation                |contains               |Yes                                     |
+|verify field   |Product Group                    |contains               |$pg                                     |
+|verify field   |Plant Group                      |contains               |$plantgrp                               |
+|check          |get field                        |GL Account             |value        |$gla                      |
+|check          |get field                        |Short Order Description|value        |$sodesc                   |
+|verify field   |IO                               |contains               |$io                                     |
+|verify field   |CC                               |contains               |$cc                                     |
+|check          |get field                        |Sydney Project         |value        |Yes                       |
+|verify field   |Sydney Project                   |contains               |Yes                                     |
+|verify field   |Quick turn quartz/silicon/SiC ERF|contains               |Yes                                     |
+|verify field   |Tool Down                        |contains               |Yes                                     |
+|verify field   |Deliver To                       |contains               |tv!location.delivery                    |
+|verify field   |Building                         |contains               |tv!location.building                    |
+|verify field   |Cube/Office/Lab Location         |contains               |tv!location.ofc                         |
+|verify grid    |[1]                              |column                 |Part Number  |row|[1]|contains|$pn      |
+|verify grid    |[1]                              |column                 |Description  |row|[1]|contains|$desc    |
+|verify grid    |[1]                              |column                 |Commodity    |row|[1]|contains|$comm    |
+|verify grid    |[1]                              |column                 |Std Cost     |row|[1]|contains|$stdcost |
+|verify grid    |[1]                              |column                 |Qty          |row|[1]|contains|$qty     |
+|verify grid    |[1]                              |column                 |Addtl. Fee   |row|[1]|contains|$addfee  |
+|verify grid    |[1]                              |column                 |Delivery Type|row|[1]|contains|$delivery|
+|populate field |Comments                         |with value             |APPROVING THE REQUEST                   |
+|click on button|APPROVE                                                                                           |
+
+*!
+
+!*** Log out and tear down
+
+!| script |
+|logout   |
+|tear down|
+
+*!

@@ -1,0 +1,422 @@
+!3 v23.1.1
+* Enhancements
+  * Removed bundled browser drivers
+    * Correct version will automatically be downloaded at runtime
+    * Specific versions can be downloaded from https://sites.google.com/chromium.org/driver/downloads or https://github.com/mozilla/geckodriver/releases
+  * Added support for Selenium 4.8.2 which solves https://github.com/SeleniumHQ/selenium/issues/11750
+
+!3 v23.1
+* Enhancements
+  * Supports Appian version 23.1
+  * Updated locator for Dropdown class
+* Bug Fixes
+  * Update CVEs
+  * Update scripts (start.bat, start-mac.sh, start-unix.sh, runFitNesseTest.sh) to
+    reference the new fitnesse-20221219-standalone.jar
+
+!3 v22.4
+* Enhancements
+  * Supports Appian version 22.4
+  * Added support for Chrome v107
+
+!3 v22.3.1
+* Bug Fixes
+  * Fix TempoRecordTypeUserFilter's clear method to work for newer versions of Chrome
+
+!3 v22.3
+* Enhancements
+  * Supports Appian version 22.3 (Remove support for 20.3)
+
+!3 v22.2.1
+* Bug Fixes
+  * Fix usages of deprecated WebDriverWait constructor
+
+!3 v22.2
+* Enhancements
+  * Supports Appian version 22.2
+* Bug Fixes
+  * Fix GridContents failures related to HTML updates in 22.2
+
+!3 v22.1.1
+* Enhancements
+  * Supports Selenium 4 version 4.1.2
+
+!3 v22.1
+* Enhancements
+  * Supports Appian version 22.1
+
+!3 v21.4.4
+* Bug Fixes
+  * Address Log4J CVE: Update Log4J to version 2.17.1
+
+!3 v21.4.3
+* Bug Fixes
+  * Address Log4J CVE: Update Log4J to version 2.17.0
+
+!3 v21.4.2
+* Bug Fixes
+  * Address Log4J CVE: Update Log4J to version 2.16.0
+  * Fix getGridContents when header cells do not have accessibility class
+
+!3 v21.4.1
+* Bug Fixes
+  * Address Log4J CVE: Update Log4J to version 2.15.0
+
+!3 v21.4
+* Enhancements
+  * Support new card choice components
+* Bug Fixes
+  * Update CVEs
+  * Update scripts (start.bat, start-mac.sh, start-unix.sh, runFitNesseTest.sh) to
+    reference the new fitnesse-20211030-standalone.jar
+
+!3 v21.3
+* Bug Fixes
+  * Fix bug for radio button card
+  * Fix bug for date picker
+
+!3 v21.2
+* Enhancements
+  * Support new SectionLayout
+  * Upgrade Selenium Server to 3.141.59
+* Bug Fixes
+  * Fix bug for radio button card
+  * Fix bug for icon link alt text
+
+!3 v21.1
+* Enhancements
+  * Supports Appian version 21.1
+
+!3 v20.4
+* Enhancements
+  * Support Chrome capabilities
+  * Update FitNesse version to 20200501 and Cucumber to 6.8.2
+  * Support Stamp Field
+  * Support Tag field
+  * Support signature field
+  * Support record action field
+* Bug Fixes
+  * Fix grid row count bug when there is no paging
+  * Fix getGridColumnRowValue when the grid cell is a button
+  * Fix clear picker bug when there are multiple selections
+  * Fix capturing an empty rich text field
+
+!3 v20.3
+* Enhancements
+  * NEW METHOD: Populates the search box in a dropdown with some text
+* Bug Fixes
+  * Fixed a bug for custom login submit button
+
+!3 v20.2
+* Bug Fixes
+  * Fix bug with milestone click
+  * Fix toggle box visibility on related action pop up
+
+!3 v20.1
+* Enhancements
+  * Include all jars in Cucumber
+  * NEW METHOD: click on bar chart
+  * NEW METHOD: click on menu widget
+  * NEW METHOD: click on button with tooltip
+  * NEW METHOD: verify confirmation dialog header
+  * NEW METHOD: verify confirmation dialog message
+  * NEW METHOD: Verify a field is not blank
+  * NEW METHOD: click on document image link
+  * NEW METHOD: clear search field in record
+
+* Bug Fixes
+  * Remove pie chart hover for fragility and also make it the page scroll before hovering for firefox
+  * Clicking on standalone icons by making the xpath less specific
+  * Fix closing social task bug
+
+!3 v19.4.1
+* Enhancements
+  * NEW METHOD: star and unstar action with action name
+  * NEW METHOD: click on icon link with alt text
+* Bug fixes
+  * Fixed issues for dropdowns with many options
+
+!3 v19.4
+* Enhancements
+  * NEW METHOD: verify button with label is enabled
+  * NEW METHOD: verify button with label is disabled
+  * NEW METHOD: verify link containing text is not present
+  * NEW METHOD: verify a box with given label is present
+  * NEW METHOD: verify a box with given label is not present
+  * NEW METHOD: verify a section with given label is present
+  * NEW METHOD: verify a section with given label is not present
+  * NEW METHOD: verify a card with given accessibility text is present
+  * NEW METHOD: verify a card with given accessibility text is not present
+  * NEW METHOD: verify if text is not present anywhere in the user interface
+
+* Bug fixes
+  * Fixed populate first column in a grid when rowheader is set to 1
+
+!3 v19.3.1
+* Enhancements
+  * Added additional logging for site page navigation
+* Bug fixes
+  * Fixed verify text present for text with apostrophe
+
+!3 v19.3
+* Enhancements
+  * Support gauge field
+  * Support locating field using placeholder, instructions or tooltip
+  * NEW METHOD: get gauge field GAUGE_FIELD or GAUGE_FIELD[INDEX] percentage
+  * NEW METHOD: verify gauge field GAUGE_FIELD or GAUGE_FIELD[INDEX] percentage is PERCENTAGE
+  * NEW METHOD: populate field with placeholder PLACEHOLDER with VALUE(S)
+  * NEW METHOD: populate field with instructions INSTRUCTIONS with VALUE(S)
+  * NEW METHOD: populate field with tooltip TOOLTIP with VALUE(S)
+  * NEW METHOD: get field with placeholder PLACEHOLDER value
+  * NEW METHOD: get field with instructions INSTRUCTIONS value
+  * NEW METHOD: get field with tooltip TOOLTIP value
+  * NEW METHOD: verify field with placeholder PLACEHOLDER contains VALUE(S)
+  * NEW METHOD: verify field with instructions INSTRUCTIONS contains VALUE(S)
+  * NEW METHOD: verify field with tooltip TOOLTIP contains VALUE(S)
+
+!3 v19.2
+* Enhancements
+  * Support sending news post without participants
+
+!3 v19.1.3
+* Bug fixes
+  * Fixed the bug that users can not click on menu tabs on Appian 19.1
+  * Fixed the bug on Read Only field "contains"
+  * Fixed the bug on sending news post on Appian 19.1
+
+!3 v19.1.2
+* Enhancements
+  * Support Wait For Progress
+  * Support Click on X and Y coordinates on monitor
+* Bug fixes
+  * Fixed the bug that box layout toggle only acts on the first box
+
+!3 v19.1.1
+* Bug fixes
+  * Fixed error popup caused by loading Automation Extension
+
+!3 v19.1
+* Enhancements
+  * Support Masked Barcode
+  * Support Vertical Milestone
+* Bug fixes
+  * Fixed login with terms for 17.2
+
+!3 v18.4.4
+* Enhancements
+  * NEW METHOD: populate field with partially matching picker field suggestion
+  * NEW METHOD: login into URL with username
+  * NEW METHOD: login into URL with role
+  * NEW METHOD: wait for seconds
+  * NEW METHOD: wait for minutes
+  * NEW METHOD: wait for working
+
+!3 v18.4.3
+* Enhancements
+  * Add capability to run tests on remote web drivers
+* Bug fixes
+  * Fixed milestone step verification
+  * Fixed section containing validation message verification
+
+!3 v18.4.2
+* Enhancements
+  * NEW METHOD: populate grid column row with partially matching picker field suggestion
+  * Other minor enhancements
+
+!3 v18.4.1
+* Enhancements
+  * Documentation overhaul
+  * Improved out of the box examples
+  * Updated information about supported Appian versions
+
+!3 v18.4
+* Enhancements
+  * NEW METHOD: open settings menu
+  * NEW METHOD: open user profile
+  * NEW METHOD: use discoverability to navigate to
+  * NEW METHOD: close social task
+  * NEW METHOD: verify task feed containing text is not present
+  * Added usage metrics and corresponding metrics.properties file
+* Bug Fixes
+  * Fixed login with terms
+
+!3 v18.3.1
+* Enhancements
+  * Added new methods for hovering and clicking on profile links and circles in news posts
+* Bug fixes
+  * Fixed NoClassDefFoundError for TempoEncryptedTextField introduced in 18.3
+
+!3 v18.3
+* Enhancements
+  * NEW METHOD: create a news post
+  * NEW METHOD: send kudos
+  * NEW METHOD: send messages
+  * NEW METHOD: send tasks
+  * NEW METHOD: sort tasks
+  * NEW METHOD: star a news feed item
+  * NEW METHOD: filter news feed
+  * NEW METHOD: navigate to link in news post
+  * NEW METHOD: generic assertion that text is present
+* Bug Fixes
+  * Fixed bug with MilestoneField pre-18.2
+  * Added WebContentField to 18.1
+
+!3 v18.2.1
+* Enhancements
+  * Auto login to previously set URL
+  * Milestones in side by side layout
+  * Card click identified by link name index
+  * NEW METHOD: verify video (not) present
+  * NEW METHOD: verify web content (not) present
+  * Updated test app for 18.2
+* Bug fixes
+  * User pickers not selecting correct field value
+  * Card click no working in Firefox
+
+!3 v18.2
+* Enhancements
+  * Added support for 18.2
+  * NEW METHOD: click on card
+  * Updated select grid method to account for the row highlight selection style
+  * Added test app for 18.2
+* Bug fixes
+  * Fixed fragility of file upload
+
+!3 v18.1.4
+* Enhancements
+  * Added Support for finding grid indices
+  * Added the ability to delete documents downloaded by Fitnesse
+
+!3 v18.1.3
+* Bug fixes
+  * Updated mac and linux scripts shebang to /bin/sh
+
+!3 v18.1.2
+* Bug fixes
+  * Fixed Windows start script to run FitNesse successfully
+  * Fixed the example page and default fixture to use TempoFixture instead of SitesFixture
+
+!3 v18.1.1
+* Enhancements
+  * Updated 16.3 Test Zip
+* Bug fixes
+  * Fixed issue with navigating to /logout URL
+  * Fixed Multiselect dropdown on 16.3
+  * Fixed Record filter clearing on 16.3
+
+!3 v18.1
+* Enhancements
+  * Added support for 18.1
+  * Added test app for 17.3 and 18.1
+
+!3 v17.4.1
+* Enhancements
+  * Add ability to accept Tasks
+  * Add ability to populate Record Type user filter
+  * Add ability to download files
+  * Make LinkField capturable
+  * Added advanced functionality to adjust dates, including setting dates in the past
+  * If url contains "/suite", remove anything after it to prevent navigation failure.
+* Bug fixes
+  * Updated chromedriver to version 2.33
+  * Updated startup scripts to pass FitNesseRoot properly
+  * Always logout before login in case a previous test failed and didn't logout
+  * Made Firefox webdrivers executable
+  * Fix BarcodeField not working in 17.1+
+
+!3 v17.4
+* Enhancements
+  * Change FitNesse usernames
+  * Allow FitNesse tests to hit an arbitrary endpoint through an environment variable
+* Bug fixes
+  * Mac Firefox date and dateTime field tests no longer throw an null character
+  * Dropdown tests does not read duplicate values
+
+!3 v17.3.2
+* Enhancement
+  * Updated test application to run initialize on import
+* Bug fixes
+  * Checkboxes that are too short are not checked
+
+!3 v17.3.1
+* Enhancements
+  * Updated Test App to create users
+  * Documentation tweaks/ Readme tweaks
+* Bug fixes
+  * Allowed login for internationalized pages
+  * Fixed an issue preventing searching in record list view
+  * Changed the way the start-unix script was sourced
+
+!3 v17.3
+* Enhancements
+  * Supports Appian version 17.3
+  * Ability to configure custom login page
+  * Updated the following components to be compatible with the latest Appian Hotfix Package for 17.1 (G), and 17.2 (D):
+    * Paging Grid
+    * Editable Grid
+  * Scripts now recognize new loading bar and wait for it to be done before continuing
+  * Added shell scripts and drivers for F4A on Mac and Linux
+* Bug fixes
+  * Browser is maximized by default which ensures the "Sign Out" button is always visible
+    Note: Previously tests could hang waiting to logout if the browser window was within a specific size range where the "Sign Out" button got hidden
+
+!3 v17.2.1
+* Enhancements
+  * Updated Selenium webdriver to v3.4.0
+  * Now works with the latest version of Firefox (v54.0.1 as of this release)
+  * Includes latest version of geckodriver for Firefox (v0.18.0 as of this release)
+  * Latest version of Chrome still supported (v60.0.3112.90 (Official Build) as of this release)
+  * Includes latest version of chromedriver for Chrome (v2.31 as of this release)
+  * Updated the following components to be compatible with the latest Appian Hotfixes for 17.1 (Hotfix Package F as of this release) and 17.2 (Hotfix Package C as of this release):
+    * Dropdown
+    * File Upload
+    * Paging Grid
+    * Editable Grid
+    * Milestone
+  * Added support for multiple file upload (17.2+)
+  * Improved test run speed when interacting with dropdown components
+  * Added support to clear dropdown fields:
+    * For single selection, the clear command will automatically select the first item in the list
+    * For multiple selection, the clear command will deselect all selected options
+
+!3 v17.2
+* Enhancements
+  * Supports Appian version 17.2
+
+!3 v17.1.2
+*Bug fixes and support for Mac
+
+!3 v17.1.1
+*Bug fixes
+
+!3 v17.1 (New versioning scheme for easier tracking) (New versioning scheme for easier tracking)
+* Enhancements
+  * Supports Appian version 17.1
+
+!3 v1.4
+* Enhancements
+  * Supports Appian version 16.3
+* Bugs
+ * Can now populate field whose label matches the form title
+
+!3 v1.3.2
+* Enhancements
+  * All text comparisons are now case-insensitive
+  * Milestone fields implemented
+  * Ability to refer to java variables as tv!VAR_NAME
+  * Ability to populate newlines in paragraph fields
+  * NEW METHOD: click on save changes
+  * NEW METHOD: get/post web api with USERNAME/ROLE
+  * NEW METHOD: set variable VAR_NAME with VALUE
+  * NEW METHOD: get variable VAR_NAME
+  * NEW METHOD: click on grid column row (works for images and links)
+* Bugs
+  * Apostrophes no longer cause errors
+* Deprecating
+  * METHOD: |setup selenium web driver with browser|
+  * REPLACED WITH: |setup with browser|
+  * METHOD: |tear down selenium web driver|
+  * REPLACED WITH: |tear down|
+* Other
+  * Documentation overhaul
+  * Added upgrade guide

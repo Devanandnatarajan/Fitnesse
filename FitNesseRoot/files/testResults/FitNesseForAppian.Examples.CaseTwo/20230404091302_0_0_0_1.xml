@@ -1,0 +1,757 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20221219</FitNesseVersion>
+  <rootPath>FitNesseForAppian.Examples.CaseTwo</rootPath>
+  <result>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2023-04-04T09:13:07+05:30</date>
+    <runTimeInMillis>101480</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ScenarioLibrary"&gt;.ScenarioLibrary&lt;/a&gt; &lt;a href="ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h2 id="0"&gt;These scenarios will be accessible to all test cases in the the FitNesseRoot folder. If you are using a different FitNesseRoot Folder, make sure to copy these files if using any setup scenarios.&lt;/h2&gt;
+&lt;br/&gt;&lt;h3 id="1"&gt;Update these variables for your specific test environment&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Variables for Scenarios&lt;/p&gt;
+	&lt;div&gt;Default browser can be &lt;b&gt;FIREFOX&lt;/b&gt; or &lt;b&gt;CHROME&lt;/b&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultBrowser=FIREFOX&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Default Version can be any supported Appian Version in &lt;b&gt;xx.x&lt;/b&gt; format from (21.2 - 23.1)&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultVersion=23.1&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Default Locale can be &lt;b&gt;en_US&lt;/b&gt; or &lt;b&gt;en_GB&lt;/b&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultLocale=en_US&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Default URL should include http or https and /suite (e.g. &lt;b&gt;https://forum.appian.com/suite&lt;/b&gt; )&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultUrl=REPLACE_APPIAN_URL&lt;/span&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h3 id="2"&gt;To use out of the box functionality, do not update the scenarios below&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Setup customizable for browser, locale, version, and URL&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;setup for test script for browser&lt;/td&gt;
+		&lt;td&gt;browserType&lt;/td&gt;
+		&lt;td&gt;locale&lt;/td&gt;
+		&lt;td&gt;location&lt;/td&gt;
+		&lt;td&gt;version&lt;/td&gt;
+		&lt;td&gt;versionNum&lt;/td&gt;
+		&lt;td&gt;url&lt;/td&gt;
+		&lt;td&gt;appianUrl&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;setup with browser&lt;/td&gt;
+		&lt;td colspan="8"&gt;@browserType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td colspan="8"&gt;@location&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td colspan="8"&gt;@versionNum&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appianUrl&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;set timeout seconds to&lt;/td&gt;
+		&lt;td colspan="8"&gt;20&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td colspan="9"&gt;set start datetime&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Scenario - Setup using default values&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;setup for test script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;setup for test script for browser&lt;/td&gt;
+		&lt;td&gt;FIREFOX&lt;/td&gt;
+		&lt;td&gt;locale&lt;/td&gt;
+		&lt;td&gt;en_US&lt;/td&gt;
+		&lt;td&gt;version&lt;/td&gt;
+		&lt;td&gt;23.1&lt;/td&gt;
+		&lt;td&gt;url&lt;/td&gt;
+		&lt;td&gt;REPLACE_APPIAN_URL&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;&lt;span class="fitnesse"&gt;FitNesse&lt;/span&gt; Configurations&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: COMMAND_PATTERN=java -Dlog4j.configuration=file:///${automated.testing.home}/log4j.properties -cp %p %m&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Fitnesse/**.jar&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;h3 id="0"&gt;&lt;b&gt;Please follow the directions below to execute the test&lt;/b&gt;&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;ol&gt;
+	&lt;li&gt;If your TESTING_HOME is located somewhere other than C:\Fitnesse, update &lt;i&gt;automated.testing.home&lt;/i&gt; in TESTING_HOME/configs/custom.properties&lt;ul&gt;
+	&lt;li&gt;For more information look at &lt;a href="FitNesseForAppian.Documentation.Administration.ChangeFitnesseForAppianInstallationDirectory"&gt;Changing FitNesse for Appian installation directory&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+	&lt;li&gt;Click "Edit" at the top of this page and update the following fields in the "Initialization and Login" block below&lt;ul&gt;
+	&lt;li&gt;Replace &lt;i&gt;APPIAN_URL&lt;/i&gt; with Appian URL, beginning with &lt;a href="https://"&gt;https://&lt;/a&gt; and including /suite at the end (e.g. &lt;a href="https://forum.appian.com/suite)"&gt;https://forum.appian.com/suite)&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Replace &lt;i&gt;APPIAN_VERSION&lt;/i&gt; with a supported version from (21.2 - 23.1)&lt;/li&gt;
+	&lt;li&gt;Replace &lt;i&gt;APPIAN_LOCALE&lt;/i&gt; with (en_US or en_GB) to handle differences in how dates are displayed&lt;/li&gt;
+	&lt;li&gt;Replace &lt;i&gt;APPIAN_USERNAME&lt;/i&gt; with a valid username for Appian URL above&lt;/li&gt;
+	&lt;li&gt;Open C:\Fitnesse/configs/users.properties and add a line for the above username that is of the form username=password (e.g. test.user=password)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+	&lt;li&gt;Click "Test" at the top of this page&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br/&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Initialization and Login to Tempo&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;com.appiancorp.ps.automatedtest.fixture.TempoFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;setup with&lt;/td&gt;
+		&lt;td&gt;CHROME&lt;/td&gt;
+		&lt;td&gt;browser&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td colspan="2"&gt;https://appiancoe.vuram.com/suite/sites/case-management-site/&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td colspan="2"&gt;22.4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td colspan="2"&gt;en_US&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td colspan="2"&gt;sandhyan&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Click on all the tabs&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="4"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="3"&gt;RECORD&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;verify record type user filter &lt;span class="error"&gt;An error has occurred: User Filter - STATUS&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;STATUS&lt;/td&gt;
+		&lt;td colspan="2"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;verify record&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;SAM_CM0014&lt;/td&gt;
+		&lt;td colspan="2"&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="3"&gt;SAM_CM0014&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field &lt;span class="error"&gt;Timeout period reached: Wait for Field - Request Type&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Request Type&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;Acceptance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;take screenshot&lt;/td&gt;
+		&lt;td colspan="3"&gt;record&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set screenshot path to&lt;/td&gt;
+		&lt;td colspan="3"&gt;C:\\Fitnesse\\Downloads\\&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;wait for&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td colspan="2"&gt;seconds&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="3"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="2"&gt;Document View&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;take screenshot&lt;/td&gt;
+		&lt;td colspan="2"&gt;docuview&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set screenshot path to&lt;/td&gt;
+		&lt;td colspan="2"&gt;C:\\Fitnesse\\Downloads\\&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="2"&gt;Request Audit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;take screenshot&lt;/td&gt;
+		&lt;td colspan="2"&gt;audit&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set screenshot path to&lt;/td&gt;
+		&lt;td colspan="2"&gt;C:\\Fitnesse\\Downloads\\&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="2"&gt;Related Actions&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;verify link&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Send Mail&lt;/td&gt;
+		&lt;td&gt;is present&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;take screenshot&lt;/td&gt;
+		&lt;td colspan="2"&gt;relatedaction&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set screenshot path to&lt;/td&gt;
+		&lt;td colspan="2"&gt;C:\\Fitnesse\\Downloads\\&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="2"&gt;Send Mail&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;take screenshot&lt;/td&gt;
+		&lt;td colspan="2"&gt;mail&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set screenshot path to&lt;/td&gt;
+		&lt;td&gt;C:\\Fitnesse\\Downloads\\&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Log out and tear down&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;logout&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;tear down&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>CaseTwo</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='com.appiancorp.ps.automatedtest.fixture.TempoFixture', args=[]}</instruction>
+        <slimResult>pass(com.appiancorp.ps.automatedtest.fixture.TempoFixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>com.appiancorp.ps.automatedtest.fixture.TempoFixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='setupWithBrowser', args=[CHROME]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='setAppianUrlTo', args=[https://appiancoe.vuram.com/suite/sites/case-management-site/]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='setAppianVersionTo', args=[22.4]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_4', instruction='call', instanceName='scriptTableActor', methodName='setAppianLocaleTo', args=[en_US]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_2_5', instruction='call', instanceName='scriptTableActor', methodName='loginWithUsername', args=[sandhyan]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_2_5</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='call', instanceName='scriptTableActor', methodName='clickOnMenu', args=[RECORD]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='verifyRecordTypeUserFilterIsPresent', args=[STATUS]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <type>ScriptActionExpectation</type>
+          <evaluationMessage>An error has occurred: User Filter - STATUS</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='verifyRecordIsPresent', args=[SAM_CM0014]}</instruction>
+        <slimResult>pass()</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[SAM_CM0014]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_3_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='verifyFieldContains', args=[Request Type, Acceptance]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_3_4</instructionId>
+          <type>ScriptActionExpectation</type>
+          <evaluationMessage>Timeout period reached: Wait for Field - Request Type</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='takeScreenshot', args=[record]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_3_5</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='setScreenshotPathTo', args=[C:\\Fitnesse\\Downloads\\]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_3_6</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='waitForSeconds', args=[5]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_3_7</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[Document View]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='takeScreenshot', args=[docuview]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='setScreenshotPathTo', args=[C:\\Fitnesse\\Downloads\\]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_3', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[Request Audit]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_4', instruction='call', instanceName='scriptTableActor', methodName='takeScreenshot', args=[audit]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_5', instruction='call', instanceName='scriptTableActor', methodName='setScreenshotPathTo', args=[C:\\Fitnesse\\Downloads\\]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_5</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_6', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[Related Actions]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_6</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_7', instruction='call', instanceName='scriptTableActor', methodName='verifyLinkIsPresent', args=[Send Mail]}</instruction>
+        <slimResult>pass()</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_4_7</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_8', instruction='call', instanceName='scriptTableActor', methodName='takeScreenshot', args=[relatedaction]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_8</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_9', instruction='call', instanceName='scriptTableActor', methodName='setScreenshotPathTo', args=[C:\\Fitnesse\\Downloads\\]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_9</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_10', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[Send Mail]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_10</instructionId>
+          <col>0</col>
+          <row>11</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_11', instruction='call', instanceName='scriptTableActor', methodName='takeScreenshot', args=[mail]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_11</instructionId>
+          <col>0</col>
+          <row>12</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_4_12', instruction='call', instanceName='scriptTableActor', methodName='setScreenshotPathTo', args=[C:\\Fitnesse\\Downloads\\]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_4_12</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='call', instanceName='scriptTableActor', methodName='logout', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_5_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='tearDown', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -Dlog4j.configuration=file:///C:\Fitnesse/log4j.properties -cp C:\Fitnesse\lib\accessors-smart-2.4.9.jar;C:\Fitnesse\lib\asm-9.3.jar;C:\Fitnesse\lib\async-http-client-2.12.3.jar;C:\Fitnesse\lib\async-http-client-netty-utils-2.12.3.jar;C:\Fitnesse\lib\auto-common-1.2.jar;C:\Fitnesse\lib\auto-service-1.0.1.jar;C:\Fitnesse\lib\auto-service-annotations-1.0.1.jar;C:\Fitnesse\lib\byte-buddy-1.14.2.jar;C:\Fitnesse\lib\checker-qual-3.12.0.jar;C:\Fitnesse\lib\commons-codec-1.15.jar;C:\Fitnesse\lib\commons-exec-1.3.jar;C:\Fitnesse\lib\commons-io-2.11.0.jar;C:\Fitnesse\lib\commons-lang3-3.12.0.jar;C:\Fitnesse\lib\commons-text-1.10.0.jar;C:\Fitnesse\lib\diffutils-1.3.0.jar;C:\Fitnesse\lib\error_prone_annotations-2.11.0.jar;C:\Fitnesse\lib\failsafe-3.3.1.jar;C:\Fitnesse\lib\failureaccess-1.0.1.jar;C:\Fitnesse\lib\fitnesse-20221219-standalone.jar;C:\Fitnesse\lib\google-analytics-java-2.0.0.jar;C:\Fitnesse\lib\gson-2.10.1.jar;C:\Fitnesse\lib\guava-31.1-jre.jar;C:\Fitnesse\lib\htmllexer-2.1.jar;C:\Fitnesse\lib\htmlparser-2.1.jar;C:\Fitnesse\lib\httpclient-4.5.13.jar;C:\Fitnesse\lib\httpcore-4.4.13.jar;C:\Fitnesse\lib\j2objc-annotations-1.3.jar;C:\Fitnesse\lib\jackson-annotations-2.14.2.jar;C:\Fitnesse\lib\jackson-core-2.14.2.jar;C:\Fitnesse\lib\jackson-databind-2.14.2.jar;C:\Fitnesse\lib\jakarta.activation-1.2.2.jar;C:\Fitnesse\lib\jcl-over-slf4j-1.7.25.jar;C:\Fitnesse\lib\jcommander-1.82.jar;C:\Fitnesse\lib\json-20230227.jar;C:\Fitnesse\lib\json-path-2.8.0.jar;C:\Fitnesse\lib\json-smart-2.4.10.jar;C:\Fitnesse\lib\jsr305-3.0.2.jar;C:\Fitnesse\lib\jtoml-2.0.0.jar;C:\Fitnesse\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Fitnesse\lib\log4j-api-2.20.0.jar;C:\Fitnesse\lib\log4j-core-2.20.0.jar;C:\Fitnesse\lib\netty-buffer-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-http-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-socks-4.1.90.Final.jar;C:\Fitnesse\lib\netty-common-4.1.90.Final.jar;C:\Fitnesse\lib\netty-handler-4.1.90.Final.jar;C:\Fitnesse\lib\netty-handler-proxy-4.1.90.Final.jar;C:\Fitnesse\lib\netty-reactive-streams-2.0.4.jar;C:\Fitnesse\lib\netty-resolver-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-classes-epoll-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-epoll-4.1.90.Final-linux-x86_64.jar;C:\Fitnesse\lib\netty-transport-native-epoll-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-kqueue-4.1.90.Final-osx-x86_64.jar;C:\Fitnesse\lib\netty-transport-native-kqueue-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-unix-common-4.1.90.Final.jar;C:\Fitnesse\lib\opentelemetry-api-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-api-events-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-api-logs-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-context-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-exporter-logging-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-common-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-sdk-metrics-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-trace-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-semconv-1.24.0-alpha.jar;C:\Fitnesse\lib\reactive-streams-1.0.3.jar;C:\Fitnesse\lib\selenium-api-4.8.2.jar;C:\Fitnesse\lib\selenium-chrome-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-chromium-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v109-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v110-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v111-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v85-4.8.2.jar;C:\Fitnesse\lib\selenium-edge-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-firefox-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-http-4.8.2.jar;C:\Fitnesse\lib\selenium-ie-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-java-4.8.2.jar;C:\Fitnesse\lib\selenium-json-4.8.2.jar;C:\Fitnesse\lib\selenium-manager-4.8.2.jar;C:\Fitnesse\lib\selenium-remote-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-safari-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-support-4.8.2.jar;C:\Fitnesse\lib\slf4j-api-1.7.36.jar;C:\Fitnesse\lib\slf4j-jdk14-1.7.36.jar;C:\Fitnesse\lib\velocity-engine-core-2.3.jar;C:\Fitnesse\lib\appian\appian-selenium-api-23.1.1.jar;C:\Fitnesse\lib\fitnesse-20221219-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>1</exitCode>
+    <stdOut>09:14:04.878 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - User Filter - STATUS
+java.lang.Exception: Searched for value not found in any filter dropdowns.
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.checkDropdownValues(TempoRecordTypeUserFilter.java:217) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.waitForLink(TempoRecordTypeUserFilter.java:154) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.verifyRecordTypeUserFilterIsPresent(TempoFixture.java:749) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+
+09:14:04.941 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - User Filter - STATUS
+com.appiancorp.ps.automatedtest.exception.GenericTestException: message:&lt;&lt;An error has occurred: User Filter - STATUS&gt;&gt;
+	at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:79) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.checkDropdownValues(TempoRecordTypeUserFilter.java:217) ~[appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.waitForLink(TempoRecordTypeUserFilter.java:154) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.verifyRecordTypeUserFilterIsPresent(TempoFixture.java:749) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+
+09:14:18.043 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Field - Request Type
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[(self::label or self::span) and contains(@class, 'FieldLayout---field_label') and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'request type')]/parent::div/parent::div (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\U405070\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59218/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10277487d516683e397f784e4ba50429
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.AbstractTempoField.waitFor(AbstractTempoField.java:74) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.verifyFieldContains(TempoFixture.java:1712) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+
+</stdOut>
+    <stdErr>ERROR StatusLogger Reconfiguration failed: No configuration found for '6f94fa3e' at 'null' in 'null'
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Fitnesse/lib/fitnesse-20221219-standalone.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Fitnesse/lib/slf4j-jdk14-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.JDK14LoggerFactory]
+ChromeDriver was started successfully.
+
+Apr 04, 2023 9:13:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 107
+
+Apr 04, 2023 9:13:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+java.lang.Exception: Searched for value not found in any filter dropdowns.
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.checkDropdownValues(TempoRecordTypeUserFilter.java:217)
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.waitForLink(TempoRecordTypeUserFilter.java:154)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.verifyRecordTypeUserFilterIsPresent(TempoFixture.java:749)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112)
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:169)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177)
+	at fitnesse.slim.SlimService.accept(SlimService.java:139)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92)
+	at fitnesse.slim.SlimService.main(SlimService.java:57)
+com.appiancorp.ps.automatedtest.exception.GenericTestException: message:&lt;&lt;An error has occurred: User Filter - STATUS&gt;&gt;
+	at com.appiancorp.ps.automatedtest.exception.ExceptionBuilder.build(ExceptionBuilder.java:79)
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.checkDropdownValues(TempoRecordTypeUserFilter.java:217)
+	at com.appiancorp.ps.automatedtest.tempo.record.TempoRecordTypeUserFilter.waitForLink(TempoRecordTypeUserFilter.java:154)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.verifyRecordTypeUserFilterIsPresent(TempoFixture.java:749)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112)
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:169)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177)
+	at fitnesse.slim.SlimService.accept(SlimService.java:139)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92)
+	at fitnesse.slim.SlimService.main(SlimService.java:57)
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>107343</totalRunTimeInMillis>
+</testResults>
+

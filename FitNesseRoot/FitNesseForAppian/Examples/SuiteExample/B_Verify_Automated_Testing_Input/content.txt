@@ -1,0 +1,10 @@
+!*** Verify newly created entry
+!| script                                              |
+|click on menu       |Records                          |
+|click on record type|Automated Testing Records        |
+|click on record     |tv!title                         |
+|verify field        |title     |contains|tv!title     |
+|verify field        |quantity  |contains|tv!quantity  |
+|verify field        |price     |contains|tv!price     |
+|verify field        |start date|contains|tv!start_date|
+***!

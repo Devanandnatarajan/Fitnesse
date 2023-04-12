@@ -1,0 +1,130 @@
+!***> FitNesse Configurations
+
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.configuration=file:///${automated.testing.home}/log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+*!
+----
+!3 '''Please follow the directions below to execute the test'''
+----
+ 1 If your TESTING_HOME is located somewhere other than ${automated.testing.home}, update ''automated.testing.home'' in TESTING_HOME/configs/custom.properties
+   * For more information look at [[Changing !-FitNesse-! for Appian installation directory][.FitNesseForAppian.Documentation.Administration.ChangeFitnesseForAppianInstallationDirectory]].
+ 1 Click "Edit" at the top of this page and update the following fields in the "Initialization and Login" block below
+   * Replace ''APPIAN_URL'' with Appian URL, beginning with https:// and including /suite at the end (e.g. https://forum.appian.com/suite)
+   * Replace ''APPIAN_VERSION'' with a supported version from (21.2 - 23.1)
+   * Replace ''APPIAN_LOCALE'' with (en_US or en_GB) to handle differences in how dates are displayed
+   * Replace ''APPIAN_USERNAME'' with a valid username for Appian URL above
+   * Open ${automated.testing.home}/configs/users.properties and add a line for the above username that is of the form username=password (e.g. test.user=password)
+ 1 Click "Test" at the top of this page
+
+----
+!*** Initialization and Login to Tempo
+
+!| script              |com.appiancorp.ps.automatedtest.fixture.TempoFixture       |
+|setup with            |CHROME                       |browser                      |
+|set appian url to     |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to |22.4                                                       |
+|set appian locale to  |en_US                                                      |
+|login with username   |Dev_Manager                                                |
+|set screenshot path to|C:\Fitnesse\Downloads/                                     |
+
+*!
+
+
+!*** Submit the request
+
+!| script                                                                                                                                             |
+|click on menu           |ORDER PARTS                                                                                                                 |
+|wait for                |5                       |seconds                                                                                            |
+|take screenshot         |emptyform                                                                                                                   |
+|click on checkbox option|[1]                                                                                                                         |
+|populate field          |Product Group           |with value             |Gops                                                                       |
+|$pg=                    |get field               |Product Group          |value                                                                      |
+|click on radio option   |1020                                                                                                                        |
+|$plantgrp=              |get field               |Plant Group            |value                                                                      |
+|click on radio option   |630100                                                                                                                      |
+|$gla=                   |get field               |GL Account             |value        |                                                             |
+|populate field          |IO                      |with                   |3            |partially matching picker field suggestion                   |
+|$io=                    |get field               |IO                     |value                                                                      |
+|populate field          |CC                      |with                   |2            |partially matching picker field suggestion                   |
+|$cc=                    |get field               |CC                     |value                                                                      |
+|populate field          |Short Order Description |with value             |TEST SHORT ORDER DESC                                                      |
+|$sodesc=                |get field               |Short Order Description|value                                                                      |
+|click on checkbox option|[2]                                                                                                                         |
+|click on checkbox option|[3]                                                                                                                         |
+|click on checkbox option|[4]                                                                                                                         |
+|set test variable       |location                |with                   |{"delivery":"CHENNAI","building":"SHYAMALA TOWERS","ofc":"NORTHWING"}      |
+|populate field          |Deliver To              |with                   |tv!location.delivery                                                       |
+|populate field          |Building                |with                   |tv!location.building                                                       |
+|populate field          |Cube/Office/Lab Location|with                   |tv!location.ofc                                                            |
+|populate grid           |[1]                     |column                 |Part Number  |row          |[1]|with        |NPN                           |
+|$pn=                    |get grid                |[1]                    |column       |Part Number  |row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Description  |row          |[1]|with        |SERVICE SPARE PARTS PA_2IEIE32|
+|$desc=                  |get grid                |[1]                    |column       |Description  |row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Commodity    |row          |[1]|with        |OTHER                         |
+|$comm=                  |get grid                |[1]                    |column       |Commodity    |row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Std Cost     |row          |[1]|with        |1000                          |
+|$stdcost=               |get grid                |[1]                    |column       |Std Cost     |row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Qty          |row          |[1]|with        |2                             |
+|$qty=                   |get grid                |[1]                    |column       |Qty          |row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Need Date    |row          |[1]|with        |04/20/2023                    |
+|populate grid           |[1]                     |column                 |Addtl. Fee   |row          |[1]|with        |500                           |
+|$addfee=                |get grid                |[1]                    |column       |Addtl. Fee   |row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Delivery Type|row          |[1]|with        |Stock                         |
+|$delivery=              |get grid                |[1]                    |column       |Delivery Type|row|[1]         |value                         |
+|populate grid           |[1]                     |column                 |Cust. Ship   |row          |[1]|with   value|                              |
+|populate grid           |[1]                     |column                 |Critical     |row          |[1]|with   value|                              |
+|populate grid           |[1]                     |column                 |RPM          |row          |[1]|with   value|                              |
+|take screenshot         |filledform                                                                                                                  |
+|click on button         |PROCEED TO CHECKOUT                                                                                                         |
+|take screenshot         |confirmationscreen                                                                                                          |
+|click on button         |OK                                                                                                                          |
+
+*!
+
+
+
+!*** Accept & Approve the Task
+
+!| script                                                                                                          |
+|click on menu  |TASK                                                                                              |
+|wait for       |5                                |seconds                                                         |
+|click on menu  |TASK                                                                                              |
+|take screenshot|alltasks                                                                                          |
+|verify link    |Approval-#ORDERID[1]             |is present                                                      |
+|click on link  |Approval-#ORDERID[1]                                                                              |
+|take screenshot|taskbeforeaccept                                                                                  |
+|accept task                                                                                                       |
+|verify field   |Dummy Reservation                |contains               |Yes                                     |
+|verify field   |Product Group                    |contains               |$pg                                     |
+|verify field   |Plant Group                      |contains               |$plantgrp                               |
+|check          |get field                        |GL Account             |value        |$gla                      |
+|check          |get field                        |Short Order Description|value        |$sodesc                   |
+|verify field   |IO                               |contains               |$io                                     |
+|verify field   |CC                               |contains               |$cc                                     |
+|check          |get field                        |Sydney Project         |value        |Yes                       |
+|verify field   |Sydney Project                   |contains               |Yes                                     |
+|verify field   |Quick turn quartz/silicon/SiC ERF|contains               |Yes                                     |
+|verify field   |Tool Down                        |contains               |Yes                                     |
+|verify field   |Deliver To                       |contains               |tv!location.delivery                    |
+|verify field   |Building                         |contains               |tv!location.building                    |
+|verify field   |Cube/Office/Lab Location         |contains               |tv!location.ofc                         |
+|verify grid    |[1]                              |column                 |Part Number  |row|[1]|contains|$pn      |
+|verify grid    |[1]                              |column                 |Description  |row|[1]|contains|$desc    |
+|verify grid    |[1]                              |column                 |Commodity    |row|[1]|contains|$comm    |
+|verify grid    |[1]                              |column                 |Std Cost     |row|[1]|contains|$stdcost |
+|verify grid    |[1]                              |column                 |Qty          |row|[1]|contains|$qty     |
+|verify grid    |[1]                              |column                 |Addtl. Fee   |row|[1]|contains|$addfee  |
+|verify grid    |[1]                              |column                 |Delivery Type|row|[1]|contains|$delivery|
+|populate field |Comments                         |with value             |APPROVING THE REQUEST                   |
+|click on button|APPROVE                                                                                           |
+
+
+*!
+!*** Log out and tear down
+
+!| script |
+|logout   |
+|tear down|
+
+*!

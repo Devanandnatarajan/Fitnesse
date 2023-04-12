@@ -1,0 +1,7 @@
+!*** Initialization
+This table opens a new instance of the Firefox browser, navigates to Appian, and logs in
+
+!| script                           |
+|setup with         |FIREFOX|browser|
+|login with username|APPIAN_USERNAME|
+***!

@@ -1,0 +1,10 @@
+!*** Fill out Automated Testing Data Input form
+!| script                                     |
+|click on menu  |Actions                      |
+|click on action|Automated Testing Input      |
+|populate field |title     |with|tv!title     |
+|populate field |quantity  |with|tv!quantity  |
+|populate field |price     |with|tv!price     |
+|populate field |start date|with|tv!start_date|
+|click on button|Submit                       |
+***!

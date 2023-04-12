@@ -1,0 +1,83 @@
+!***> FitNesse Configurations
+
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.configuration=file:///${automated.testing.home}/log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+*!
+----
+!3 '''Please follow the directions below to execute the test'''
+----
+ 1 If your TESTING_HOME is located somewhere other than ${automated.testing.home}, update ''automated.testing.home'' in TESTING_HOME/configs/custom.properties
+   * For more information look at [[Changing !-FitNesse-! for Appian installation directory][.FitNesseForAppian.Documentation.Administration.ChangeFitnesseForAppianInstallationDirectory]].
+ 1 Click "Edit" at the top of this page and update the following fields in the "Initialization and Login" block below
+   * Replace ''APPIAN_URL'' with Appian URL, beginning with https:// and including /suite at the end (e.g. https://forum.appian.com/suite)
+   * Replace ''APPIAN_VERSION'' with a supported version from (21.2 - 23.1)
+   * Replace ''APPIAN_LOCALE'' with (en_US or en_GB) to handle differences in how dates are displayed
+   * Replace ''APPIAN_USERNAME'' with a valid username for Appian URL above
+   * Open ${automated.testing.home}/configs/users.properties and add a line for the above username that is of the form username=password (e.g. test.user=password)
+ 1 Click "Test" at the top of this page
+
+----
+!*** Initialization and Login to Tempo
+
+!| script              |com.appiancorp.ps.automatedtest.fixture.TempoFixture       |
+|setup with            |CHROME                       |browser                      |
+|set appian url to     |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to |22.4                                                       |
+|set appian locale to  |en_US                                                      |
+|login with username   |Dev_Employee                                               |
+|set screenshot path to|C:\Fitnesse\Downloads/                                     |
+
+*!
+!*** Click on all the tabs
+
+!| script                                                                                                                      |
+|click on menu           |ORDER PARTS                                                                                          |
+|wait for                |5                       |seconds                                                                     |
+|take screenshot         |emptyform                                                                                            |
+|click on checkbox option|[1]                                                                                                  |
+|populate field          |Product Group           |with value|Gops                                                             |
+|click on radio option   |1020                                                                                                 |
+|click on radio option   |630100                                                                                               |
+|populate field          |IO                      |with      |3            |partially matching picker field suggestion         |
+|populate field          |CC                      |with      |2            |partially matching picker field suggestion         |
+|populate field          |Short Order Description |with value|TEST SHORT ORDER DESC                                            |
+|click on checkbox option|[2]                                                                                                  |
+|click on checkbox option|[3]                                                                                                  |
+|click on checkbox option|[4]                                                                                                  |
+|populate field          |Deliver To              |with value|CHENNAI                                                          |
+|$DT=                    |get field               |Deliver To|value                                                            |
+|populate field          |Building                |with value|SHYAMALA TOWERS                                                  |
+|populate field          |Cube/Office/Lab Location|with value|NORTHWING                                                        |
+|populate grid           |[1]                     |column    |Part Number  |row|[1]|with        |NPN                           |
+|populate grid           |[1]                     |column    |Description  |row|[1]|with        |SERVICE SPARE PARTS PA_2IEIE32|
+|populate grid           |[1]                     |column    |Commodity    |row|[1]|with        |OTHER                         |
+|populate grid           |[1]                     |column    |Std Cost     |row|[1]|with        |1000                          |
+|populate grid           |[1]                     |column    |Qty          |row|[1]|with        |2                             |
+|populate grid           |[1]                     |column    |Need Date    |row|[1]|with        |04/20/2023                    |
+|populate grid           |[1]                     |column    |Addtl. Fee   |row|[1]|with        |500                           |
+|populate grid           |[1]                     |column    |Delivery Type|row|[1]|with        |Stock                         |
+|populate grid           |[1]                     |column    |Cust. Ship   |row|[1]|with   value|                              |
+|populate grid           |[1]                     |column    |Critical     |row|[1]|with   value|                              |
+|populate grid           |[1]                     |column    |RPM          |row|[1]|with   value|                              |
+|click on link           |Add parts                                                                                            |
+|populate grid           |[1]                     |column    |Part Number  |row|[2]|with        |PA_0090                       |
+|populate grid           |[1]                     |column    |Qty          |row|[2]|with        |10                            |
+|populate grid           |[1]                     |column    |Need Date    |row|[2]|with        |04/11/2023                    |
+|populate grid           |[1]                     |column    |Delivery Type|row|[2]|with        |Process Lab                   |
+|populate grid           |[1]                     |column    |Cust. Ship   |row|[2]|with   value|                              |
+|populate grid           |[1]                     |column    |Critical     |row|[2]|with   value|                              |
+|populate grid           |[1]                     |column    |RPM          |row|[2]|with   value|                              |
+|take screenshot         |filledform                                                                                           |
+|click on button         |PROCEED TO CHECKOUT                                                                                  |
+|take screenshot         |confirmationscreen                                                                                   |
+|click on button         |OK                                                                                                   |
+
+*!
+!*** Log out and tear down
+
+!| script |
+|logout   |
+|tear down|
+
+*!

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20221219</FitNesseVersion>
+  <rootPath>FitNesseForAppian.Examples.VWSuite</rootPath>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.VWSuite.TC001</name>
+    <date>2023-04-11T20:43:06+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.VWSuite.TC001?pageHistory&amp;resultDate=20230411204306</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>202648</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.VWSuite.TC002</name>
+    <date>2023-04-11T20:46:29+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.VWSuite.TC002?pageHistory&amp;resultDate=20230411204629</pageHistoryLink>
+    <counts>
+      <right>19</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>180617</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -Dlog4j.configuration=file:///C:\Fitnesse/log4j.properties -cp C:\Fitnesse\lib\accessors-smart-2.4.9.jar;C:\Fitnesse\lib\asm-9.3.jar;C:\Fitnesse\lib\async-http-client-2.12.3.jar;C:\Fitnesse\lib\async-http-client-netty-utils-2.12.3.jar;C:\Fitnesse\lib\auto-common-1.2.jar;C:\Fitnesse\lib\auto-service-1.0.1.jar;C:\Fitnesse\lib\auto-service-annotations-1.0.1.jar;C:\Fitnesse\lib\byte-buddy-1.14.2.jar;C:\Fitnesse\lib\checker-qual-3.12.0.jar;C:\Fitnesse\lib\commons-codec-1.15.jar;C:\Fitnesse\lib\commons-exec-1.3.jar;C:\Fitnesse\lib\commons-io-2.11.0.jar;C:\Fitnesse\lib\commons-lang3-3.12.0.jar;C:\Fitnesse\lib\commons-text-1.10.0.jar;C:\Fitnesse\lib\diffutils-1.3.0.jar;C:\Fitnesse\lib\error_prone_annotations-2.11.0.jar;C:\Fitnesse\lib\failsafe-3.3.1.jar;C:\Fitnesse\lib\failureaccess-1.0.1.jar;C:\Fitnesse\lib\fitnesse-20221219-standalone.jar;C:\Fitnesse\lib\google-analytics-java-2.0.0.jar;C:\Fitnesse\lib\gson-2.10.1.jar;C:\Fitnesse\lib\guava-31.1-jre.jar;C:\Fitnesse\lib\htmllexer-2.1.jar;C:\Fitnesse\lib\htmlparser-2.1.jar;C:\Fitnesse\lib\httpclient-4.5.13.jar;C:\Fitnesse\lib\httpcore-4.4.13.jar;C:\Fitnesse\lib\j2objc-annotations-1.3.jar;C:\Fitnesse\lib\jackson-annotations-2.14.2.jar;C:\Fitnesse\lib\jackson-core-2.14.2.jar;C:\Fitnesse\lib\jackson-databind-2.14.2.jar;C:\Fitnesse\lib\jakarta.activation-1.2.2.jar;C:\Fitnesse\lib\jcl-over-slf4j-1.7.25.jar;C:\Fitnesse\lib\jcommander-1.82.jar;C:\Fitnesse\lib\json-20230227.jar;C:\Fitnesse\lib\json-path-2.8.0.jar;C:\Fitnesse\lib\json-smart-2.4.10.jar;C:\Fitnesse\lib\jsr305-3.0.2.jar;C:\Fitnesse\lib\jtoml-2.0.0.jar;C:\Fitnesse\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Fitnesse\lib\log4j-api-2.20.0.jar;C:\Fitnesse\lib\log4j-core-2.20.0.jar;C:\Fitnesse\lib\netty-buffer-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-http-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-socks-4.1.90.Final.jar;C:\Fitnesse\lib\netty-common-4.1.90.Final.jar;C:\Fitnesse\lib\netty-handler-4.1.90.Final.jar;C:\Fitnesse\lib\netty-handler-proxy-4.1.90.Final.jar;C:\Fitnesse\lib\netty-reactive-streams-2.0.4.jar;C:\Fitnesse\lib\netty-resolver-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-classes-epoll-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-epoll-4.1.90.Final-linux-x86_64.jar;C:\Fitnesse\lib\netty-transport-native-epoll-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-kqueue-4.1.90.Final-osx-x86_64.jar;C:\Fitnesse\lib\netty-transport-native-kqueue-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-unix-common-4.1.90.Final.jar;C:\Fitnesse\lib\opentelemetry-api-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-api-events-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-api-logs-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-context-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-exporter-logging-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-common-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-sdk-metrics-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-trace-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-semconv-1.24.0-alpha.jar;C:\Fitnesse\lib\reactive-streams-1.0.3.jar;C:\Fitnesse\lib\selenium-api-4.8.2.jar;C:\Fitnesse\lib\selenium-chrome-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-chromium-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v109-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v110-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v111-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v85-4.8.2.jar;C:\Fitnesse\lib\selenium-edge-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-firefox-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-http-4.8.2.jar;C:\Fitnesse\lib\selenium-ie-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-java-4.8.2.jar;C:\Fitnesse\lib\selenium-json-4.8.2.jar;C:\Fitnesse\lib\selenium-manager-4.8.2.jar;C:\Fitnesse\lib\selenium-remote-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-safari-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-support-4.8.2.jar;C:\Fitnesse\lib\slf4j-api-1.7.36.jar;C:\Fitnesse\lib\slf4j-jdk14-1.7.36.jar;C:\Fitnesse\lib\velocity-engine-core-2.3.jar;C:\Fitnesse\lib\appian\appian-selenium-api-23.1.1.jar;C:\Fitnesse\lib\fitnesse-20221219-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr>ERROR StatusLogger Reconfiguration failed: No configuration found for '6f94fa3e' at 'null' in 'null'
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Fitnesse/lib/fitnesse-20221219-standalone.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Fitnesse/lib/slf4j-jdk14-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.JDK14LoggerFactory]
+ChromeDriver was started successfully.
+
+Apr 11, 2023 8:43:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+
+Apr 11, 2023 8:46:29 PM org.openqa.selenium.concurrent.ExecutorServices shutdownGracefully
+WARNING: Failed to shutdown Driver Command Executor
+
+ChromeDriver was started successfully.
+
+Apr 11, 2023 8:47:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>391279</totalRunTimeInMillis>
+</suiteResults>
+

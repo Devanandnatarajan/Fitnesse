@@ -1,0 +1,11 @@
+!3 Downloading Files
+Clicking a link on an interface with the purposes of downloading a file will continue to work in FitNesse tests cases for the Firefox and Chrome browsers.
+
+There are a few properties in the ''custom.properties'' file that effect file downloads during tests:
+
+|'''download.directory''' |Controls which directory downloaded files are saved to           |e.g. download.directory=C:\\FitNesseForAppian\\Downloads                         |
+|'''download.mime.types'''|Controls the html content-types that are allowed to be downloaded|e.g. download.mime.types=application/xml,text/plain,text/xml,image/jpeg,image/png|
+
+Additionally, files can be deleted from the download directory in order to download a second time using:
+
+|delete file|FILE_NAME|

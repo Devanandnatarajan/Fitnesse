@@ -1,0 +1,26 @@
+---
+Help: Default config details
+---
+!| scenario            |Default config details|username                                                                  |
+|setup with            |CHROME                |browser                                                                   |
+|set appian url to     |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse                                      |
+|set appian version to |22.4                                                                                             |
+|set appian locale to  |en_US                                                                                            |
+|login with username   |@username                                                                                        |
+|set screenshot path to|C:\Fitnesse\Downloads/                                                                           |
+|set test variable     |location              |with|{"delivery":"CHENNAI","building":"SHYAMALA TOWERS","ofc":"NORTHWING"}|
+
+
+!define pg {null}
+!define plantgrp {null}
+!define gla {null}
+!define io {null}
+!define cc {null}
+!define sodesc {null}
+!define pn {null}
+!define desc {null}
+!define comm {null}
+!define stdcost {null}
+!define qty {null}
+!define addfee {null}
+!define delivery {null}

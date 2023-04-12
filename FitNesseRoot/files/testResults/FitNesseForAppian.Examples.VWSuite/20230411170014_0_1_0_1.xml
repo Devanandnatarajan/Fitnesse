@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20221219</FitNesseVersion>
+  <rootPath>FitNesseForAppian.Examples.VWSuite</rootPath>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.VWSuite.Accepttask</name>
+    <date>2023-04-11T17:00:14+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.VWSuite.Accepttask?pageHistory&amp;resultDate=20230411170014</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>13</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>53505</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.VWSuite.Submitrequest</name>
+    <date>2023-04-11T17:01:08+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.VWSuite.Submitrequest?pageHistory&amp;resultDate=20230411170108</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>122511</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -Dlog4j.configuration=file:///C:\Fitnesse/log4j.properties -cp C:\Fitnesse\lib\accessors-smart-2.4.9.jar;C:\Fitnesse\lib\asm-9.3.jar;C:\Fitnesse\lib\async-http-client-2.12.3.jar;C:\Fitnesse\lib\async-http-client-netty-utils-2.12.3.jar;C:\Fitnesse\lib\auto-common-1.2.jar;C:\Fitnesse\lib\auto-service-1.0.1.jar;C:\Fitnesse\lib\auto-service-annotations-1.0.1.jar;C:\Fitnesse\lib\byte-buddy-1.14.2.jar;C:\Fitnesse\lib\checker-qual-3.12.0.jar;C:\Fitnesse\lib\commons-codec-1.15.jar;C:\Fitnesse\lib\commons-exec-1.3.jar;C:\Fitnesse\lib\commons-io-2.11.0.jar;C:\Fitnesse\lib\commons-lang3-3.12.0.jar;C:\Fitnesse\lib\commons-text-1.10.0.jar;C:\Fitnesse\lib\diffutils-1.3.0.jar;C:\Fitnesse\lib\error_prone_annotations-2.11.0.jar;C:\Fitnesse\lib\failsafe-3.3.1.jar;C:\Fitnesse\lib\failureaccess-1.0.1.jar;C:\Fitnesse\lib\fitnesse-20221219-standalone.jar;C:\Fitnesse\lib\google-analytics-java-2.0.0.jar;C:\Fitnesse\lib\gson-2.10.1.jar;C:\Fitnesse\lib\guava-31.1-jre.jar;C:\Fitnesse\lib\htmllexer-2.1.jar;C:\Fitnesse\lib\htmlparser-2.1.jar;C:\Fitnesse\lib\httpclient-4.5.13.jar;C:\Fitnesse\lib\httpcore-4.4.13.jar;C:\Fitnesse\lib\j2objc-annotations-1.3.jar;C:\Fitnesse\lib\jackson-annotations-2.14.2.jar;C:\Fitnesse\lib\jackson-core-2.14.2.jar;C:\Fitnesse\lib\jackson-databind-2.14.2.jar;C:\Fitnesse\lib\jakarta.activation-1.2.2.jar;C:\Fitnesse\lib\jcl-over-slf4j-1.7.25.jar;C:\Fitnesse\lib\jcommander-1.82.jar;C:\Fitnesse\lib\json-20230227.jar;C:\Fitnesse\lib\json-path-2.8.0.jar;C:\Fitnesse\lib\json-smart-2.4.10.jar;C:\Fitnesse\lib\jsr305-3.0.2.jar;C:\Fitnesse\lib\jtoml-2.0.0.jar;C:\Fitnesse\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Fitnesse\lib\log4j-api-2.20.0.jar;C:\Fitnesse\lib\log4j-core-2.20.0.jar;C:\Fitnesse\lib\netty-buffer-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-http-4.1.90.Final.jar;C:\Fitnesse\lib\netty-codec-socks-4.1.90.Final.jar;C:\Fitnesse\lib\netty-common-4.1.90.Final.jar;C:\Fitnesse\lib\netty-handler-4.1.90.Final.jar;C:\Fitnesse\lib\netty-handler-proxy-4.1.90.Final.jar;C:\Fitnesse\lib\netty-reactive-streams-2.0.4.jar;C:\Fitnesse\lib\netty-resolver-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-classes-epoll-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-epoll-4.1.90.Final-linux-x86_64.jar;C:\Fitnesse\lib\netty-transport-native-epoll-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-kqueue-4.1.90.Final-osx-x86_64.jar;C:\Fitnesse\lib\netty-transport-native-kqueue-4.1.90.Final.jar;C:\Fitnesse\lib\netty-transport-native-unix-common-4.1.90.Final.jar;C:\Fitnesse\lib\opentelemetry-api-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-api-events-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-api-logs-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-context-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-exporter-logging-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-common-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\Fitnesse\lib\opentelemetry-sdk-metrics-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-sdk-trace-1.24.0.jar;C:\Fitnesse\lib\opentelemetry-semconv-1.24.0-alpha.jar;C:\Fitnesse\lib\reactive-streams-1.0.3.jar;C:\Fitnesse\lib\selenium-api-4.8.2.jar;C:\Fitnesse\lib\selenium-chrome-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-chromium-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v109-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v110-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v111-4.8.2.jar;C:\Fitnesse\lib\selenium-devtools-v85-4.8.2.jar;C:\Fitnesse\lib\selenium-edge-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-firefox-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-http-4.8.2.jar;C:\Fitnesse\lib\selenium-ie-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-java-4.8.2.jar;C:\Fitnesse\lib\selenium-json-4.8.2.jar;C:\Fitnesse\lib\selenium-manager-4.8.2.jar;C:\Fitnesse\lib\selenium-remote-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-safari-driver-4.8.2.jar;C:\Fitnesse\lib\selenium-support-4.8.2.jar;C:\Fitnesse\lib\slf4j-api-1.7.36.jar;C:\Fitnesse\lib\slf4j-jdk14-1.7.36.jar;C:\Fitnesse\lib\velocity-engine-core-2.3.jar;C:\Fitnesse\lib\appian\appian-selenium-api-23.1.1.jar;C:\Fitnesse\lib\fitnesse-20221219-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>1</exitCode>
+    <stdOut>17:02:56.597 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Button - OK
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'ok') and not(contains(@class, 'button-disabled'))] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.waitFor(TempoButton.java:70) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:2449) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'ok') and not(contains(@class, 'button-disabled'))]"}
+  (Session info: chrome=112.0.5615.50)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c522a69fa7a7e46baac42003f298dbf, findElement {using=xpath, value=//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'ok') and not(contains(@class, 'button-disabled'))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\U405070\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52536/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c522a69fa7a7e46baac42003f298dbf
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.2.jar:?]
+	... 28 more
+
+</stdOut>
+    <stdErr>ERROR StatusLogger Reconfiguration failed: No configuration found for '6f94fa3e' at 'null' in 'null'
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Fitnesse/lib/fitnesse-20221219-standalone.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Fitnesse/lib/slf4j-jdk14-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.JDK14LoggerFactory]
+ChromeDriver was started successfully.
+
+Apr 11, 2023 5:00:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+
+ChromeDriver was started successfully.
+
+Apr 11, 2023 5:01:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>179748</totalRunTimeInMillis>
+</suiteResults>
+
