@@ -63,7 +63,7 @@
 |click on link           |Add parts                                                                                            |
 |populate grid           |[1]                     |column    |Part Number  |row|[2]|with        |PA_0090                       |
 |populate grid           |[1]                     |column    |Qty          |row|[2]|with        |10                            |
-|populate grid           |[1]                     |column    |Need Date    |row|[2]|with        |04/11/2023                    |
+|populate grid           |[1]                     |column    |Need Date    |row|[2]|with        |04/20/2023                    |
 |populate grid           |[1]                     |column    |Delivery Type|row|[2]|with        |Process Lab                   |
 |populate grid           |[1]                     |column    |Cust. Ship   |row|[2]|with   value|                              |
 |populate grid           |[1]                     |column    |Critical     |row|[2]|with   value|                              |
